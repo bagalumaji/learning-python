@@ -3,7 +3,7 @@
 
 class VariableTypes:
     # class variable
-    SCHOOL_NAME = "BAGAl"
+    SCHOOL_NAME = "BAGAL"
 
     def __init__(self):
         self.first_name = 'sayaji'
