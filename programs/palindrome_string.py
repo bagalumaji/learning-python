@@ -1,5 +1,5 @@
 def is_palindrome(s):
-    if s.__eq__(reverse_string(s)):
+    if s.__eq__(reverse_string_2(s)):
         print(s, " is palindromic string")
     else:
         print(s, " is not palindromic string")
@@ -27,6 +27,10 @@ def reverse_string_1(s):
         cnt += 1
 
     return result
+
+
+def reverse_string_2(s):
+    return s[::-1]
 
 
 is_palindrome("aba")
