@@ -1,7 +1,5 @@
 def remove_duplicate_sorted_list(lst):
     print(lst)
-    f = 0
-    s = 1
     l = len(lst)
     lp = 0
     rp = 1
@@ -15,7 +13,7 @@ def remove_duplicate_sorted_list(lst):
     return lp + 1
 
 
-lst = [1, 2, 2, 3, 4, 4, 5]
-l = remove_duplicate_sorted_list(lst)
-for i in range(0, l):
-    print(lst[i])
+lst1 = [1, 2, 2, 3, 4, 4, 5]
+l1 = remove_duplicate_sorted_list(lst1)
+for i in range(0, l1):
+    print(lst1[i])
