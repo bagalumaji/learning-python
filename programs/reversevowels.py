@@ -1,6 +1,6 @@
 def reverse_only_vowels(s1: str):
     result = list(s1)
-    vowels = ['a', 'e', 'i', 'o', 'u']
+    vowels: str = 'aeoiu'
     lp = 0
     rp = len(s1) - 1
     while lp < rp:
@@ -8,9 +8,9 @@ def reverse_only_vowels(s1: str):
             result[lp], result[rp] = result[rp], result[lp]
             lp += 1
             rp -= 1
-        elif  result[lp] not in vowels:
+        elif result[lp] not in vowels:
             lp += 1
-        elif  result[rp] not in vowels:
+        elif result[rp] not in vowels:
             rp -= 1
 
     print(''.join(result))
