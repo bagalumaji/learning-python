@@ -8,9 +8,9 @@ def reverse_only_vowels(s1: str):
             result[lp], result[rp] = result[rp], result[lp]
             lp += 1
             rp -= 1
-        elif not result[lp] in vowels:
+        elif  result[lp] not in vowels:
             lp += 1
-        elif not result[rp] in vowels:
+        elif  result[rp] not in vowels:
             rp -= 1
 
     print(''.join(result))
